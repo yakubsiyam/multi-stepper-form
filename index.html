@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>INSURANCE CREDENTIALING FORM</title>
+</head>
+
+<body>
+    <div class="question-enrollment">
+        <header>
+            <div class="flex-div">
+                <div class="col-item">
+                    <div class="logo"><a href="#"><img src="./images/logo.png" alt="" /></a></div>
+                </div>
+                <div class="col-item">
+                    <h1>Insurance Credentialing Form</h1>
+                    <div class="info-details">
+                        <p><i>In order to protect your personal information, <br>
+                                please submit this form to the email below ONLY.</i></p>
+                        <ul>
+                            <li> <span>Mail:</span>123 Town Square Place Ste 13, Jersey City, NJ 07310</li>
+                            <li><a href="mailto:accounting@amromed.com"> <span>Email:</span>accounting@amromed.com</a>
+                            </li>
+                            <li><span>Phone:</span> 909-406-9004</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content card">
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active" id="account"><strong>Practice Information</strong></li>
+                    <li id="personal"><strong>Provider Information</strong></li>
+                    <li id="payment"><strong>Confidential Questionaire</strong></li>
+                </ul>
+
+                <!-- PRACTICE INFORMATION -->
+                <fieldset>
+                    <section class="section_1 mb_30">
+                        <div class="col-item">
+                            <div class="inner-main-title">
+                                <h2>PRACTICE INFORMATION</h2>
+                            </div>
+                            <div class="col-title">
+                                <h3>Please use separate form for each practice:-</h3>
+                            </div>
+                            <table cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        <th colspan="4">Group/Organization Information</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Legal Business Name as Reported to the IRS</td>
+                                        <td colspan="3"><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DBA Name</td>
+                                        <td colspan="3"><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tax Identification Number</td>
+                                        <td colspan="3"><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Group NPI</td>
+                                        <td colspan="3"><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td colspan="3"><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>City/State/Zip Code</td>
+                                        <td colspan="3"><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="phone">Phone</label> </td>
+                                        <td>
+                                            <div class="input-area"> <input type="text" maxlength="11" id="phone"></div>
+                                        </td>
+                                        <td> Fax </td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Medicaid #</td>
+                                        <td colspan="3"><input type="text"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="desc-text">
+                            <p>On behalf of facility, I confirm that all information is accurate and complete to the
+                                best of my
+                                knowledge and ability. I permit Amromed LLC to use this information and extrapolate into
+                                every form which
+                                they fill on my behalf.</p>
+                        </div>
+
+                        <div class="signature-box flex-div">
+                            <div class="col-item signature-box">
+                                <div class="col-item">
+                                    <span><input id="author-sign" type="text" name="Signature"></span>
+                                    <span><label for="author-sign">Authorized Signatory</label></span>
+                                </div>
+                            </div>
+                            <div class="col-item">
+                                <span><input id="sign-date" type="date" name="date"></span>
+                                <span><label for="sign-date">Date:</label></span>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="section_2 mb_30">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Please provide copy of following documents (If available)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Signed W9</td>
+                                    <td>Liability Insurance</td>
+                                    <td>CP-575 or appropriate
+                                        substitute (or any letter from
+                                        IRS</td>
+                                </tr>
+                                <tr>
+                                    <td>Certificate of incorporation (if
+                                        corporation)</td>
+                                    <td>Letter of Intent</td>
+                                    <td>Company Roster</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <!-- INDIVIDUAL PROVIDER INFORMATION -->
+                <fieldset>
+                    <section class="section_3 mb_30">
+                        <div class="col-item">
+                          <div class="inner-main-title">
+                            <h2>INDIVIDUAL PROVIDER INFORMATION</h2>
+                          </div>
+                          <table cellspacing="0" cellpadding="0">
+                            <thead>
+                              <tr>
+                                <th colspan="6">(Please make copy of this form if more than one individual provider)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Full Name</td>
+                                <td colspan="5"><input type="text" name=""></td>
+                              </tr>
+                              <tr>
+                                <td>Home Address</td>
+                                <td colspan="5"><input type="text" name=""></td>
+                              </tr>
+                              <tr>
+                                <td>Home Phone</td>
+                                <td colspan="5"><input type="text" name=""></td>
+                              </tr>
+                              <tr>
+                                <td>Provider Type</td>
+                                <td colspan="5"><input type="text" name=""></td>
+                              </tr>
+                
+                              <tr>
+                                <td>Gender</td>
+                                <td>
+                                  <div class="select-area"> <span><input type="radio" id="male" name="gender"> <label
+                                        for="male">Male</label></span> <span><input type="radio" id="female" name="gender"> <label
+                                        for="female">Female</label></span></div>
+                                </td>
+                                <td><label for="date-birth">DOB</td>
+                                <td><input id="date-birth" type="date" name="DOB"></td>
+                                <td>SS#</td>
+                                <td><input type="text" name=""></td>
+                              </tr>
+                              <tr>
+                                <td>Phone</td>
+                                <td><input type="text" name=""></td>
+                                <td>State of Birth</td>
+                                <td><input type="text" name=""></td>
+                                <td>County of Birth#</td>
+                                <td><input type="text" name=""></td>
+                              </tr>
+                
+                              <tr>
+                                <td>CAQH #</td>
+                                <td colspan="2"><input type="text" name=""></td>
+                                <td>Individual NPI</td>
+                                <td colspan="2"><input type="text" name=""></td>
+                              </tr>
+                
+                              <tr>
+                                <td>Medicaid ID</td>
+                                <td colspan="5"><input type="text" name=""></td>
+                              </tr>
+                              <tr>
+                                <td>E-mail Address</td>
+                                <td colspan="5"><input type="email" name=""></td>
+                              </tr>
+                              <tr>
+                                <td>Fax</td>
+                                <td colspan="5"><input type="text" name=""></td>
+                              </tr>
+                              <tr>
+                                <td>Language Spoken</td>
+                                <td colspan="5"><input type="text" name=""></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </section>
+                    <input type="button" name="next" class="next action-button" value="Next" /> <input
+                                type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+                </fieldset>
+
+                <!-- CONFIDENTIAL QUESTIONAIRE -->
+                <fieldset>
+                    <section class="section_4 mb_30">
+                        <div class="col-item">
+                          <div class="inner-main-title">
+                            <h2>CONFIDENTIAL QUESTIONAIRE </h2>
+                          </div>
+                        </div>
+                        <div class="col-item">
+                          <div class="desc-text">
+                            <P> <span class="bold-color">ATTENTION:</span> IF any of the following questions are answered “Yes”, please
+                              attach an explanation for
+                              each answer. If any questions do not apply to you, please answer “No”. Failure to write an answer or
+                              provide explanations for “Yes” answers, may delay the processing of your application.</P>
+                          </div>
+                        </div>
+                
+                
+                
+                        <div class="questions-answer-box mb_30">
+                          <h3>LICENSURE INFORMATION:</h3>
+                
+                          <div class="question-box question-box1 mb_20">
+                            <h4>1. Has your professional license ever been denied, limited, suspended, revoked, or subject to probation
+                              or
+                              any other conditions in any state?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes1" name="1st"><label for="yes1">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no1" name="1st"><label for="no1">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="question-box question-box2 mb_20">
+                            <h4>2. Have you ever been disciplined, suspended, sanctioned, or otherwise restricted from participating in
+                              any private, Federal, or state health program (for example, Medicare, Medicaid), professional society,
+                              MCO, state board of medical examiners, or professional conduct board?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes2" name="2st"><label for="yes2">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no2" name="2st"><label for="no2">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                
+                          <div class="question-box question-box3 mb_20">
+                            <h4>3. Has your State Controlled Dangerous Substance (CDS) and/or your Federal DEA ever been limited,
+                              restricted, reduced, suspended, revoked, denied, not renewed, or have you ever voluntarily surrendered or
+                              limited your registration with either/both of these agencies?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes3" name="3st"><label for="yes3">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no3" name="3st"><label for="no3">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <h3>CRIMINAL HISTORY:</h3>
+                          <div class="question-box question-box4 mb_20">
+                            <h4>4. Have you ever been indicted/convicted of a felony, or are you currently under investigation with
+                              respect to such conduct?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes4" name="4st"><label for="yes4">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no4" name="4st"><label for="no4">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <h3>EDUCATION/TRAINING/BOARD CERTIFICATION:</h3>
+                          <div class="question-box question-box5 mb_20">
+                            <h4>5. During any period of your professional education, including but not limited to medical school,
+                              internship, residency, fellowship, preceptor ship, or any other additional training, were you ever
+                              disciplined, suspended, placed on probation, formally reprimanded, or asked to resign?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes5" name="5st"><label for="yes5">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no5" name="5st"><label for="no5">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                
+                          <div class="question-box question-box6 mb_20">
+                            <h4>6. Has your specialty board certification or eligibility ever been denied, revoked, relinquished, not
+                              renewed, or suspended?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes6" name="6st"><label for="yes6">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no6" name="6st"><label for="no6">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                
+                          <div class="question-box question-box7 mb_20">
+                            <h4>7. Have you ever chosen not to re-certify or voluntarily surrendered your board certification(s) while
+                              under investigation?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes7" name="7st"><label for="yes7">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no7" name="7st"><label for="no7">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                
+                          <h3>INSURANCE INFORMATION:</h3>
+                          <div class="question-box question-box8 mb_20">
+                            <h4>8. Has any insurance carrier terminated, refused coverage, or rated up because of unusual risk or have
+                              any
+                              procedures been excluded from your coverage?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes8" name="8st"><label for="yes8">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no8" name="8st"><label for="no8">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="question-box question-box9 mb_20">
+                            <h4>9. Are you currently uninsured for professional liability (malpractice insurance) coverage?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes9" name="9st"><label for="yes9">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no9" name="9st"><label for="no9">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="question-box question-box10 mb_20">
+                            <h4>10. Are you currently involved in any pending professional liability suits, claims, and/or actions?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes10" name="8st"><label for="yes10">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no10" name="10st"><label for="no10">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="question-box question-box11 mb_20">
+                            <h4>11. Have any judgments ever been made against you in professional liability cases or claims, or have you
+                              ever entered into any settlements?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes11" name="11st"><label for="yes11">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no11" name="11st"><label for="no11">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="question-box question-box12 mb_20">
+                            <h4>12. To your knowledge, has information pertaining to you ever been reported to the National Practitioner
+                              Data Bank?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes12" name="12st"><label for="yes12">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no12" name="12st"><label for="no12">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <h3>HEALTH STATUS:</h3>
+                          <div class="question-box question-box13 mb_20">
+                            <h4>13. Do you currently have any medical, chemical dependency, or psychiatric conditions that might
+                              adversely affect your ability to practice medicine or surgery or to perform the essential functions of
+                              your
+                              professional position?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes13" name="13st"><label for="yes13">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no13" name="13st"><label for="no13">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                
+                          <div class="question-box question-box14 mb_20">
+                            <h4>14. Are you currently participating in or under the supervision of a Physician or Recovery Network or
+                              any
+                              other applicable recovery program?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes14" name="14st"><label for="yes14">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no14" name="14st"><label for="no14">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <h3>HOSPITAL/OTHER AFFILIATIONS:</h3>
+                          <div class="question-box question-box15 mb_20">
+                            <h4>15. Have your hospital and/or clinical privileges ever been limited, restricted, reduced, suspended,
+                              revoked, denied, not renewed, or have you voluntarily surrendered or limited your privileges during or
+                              under the threat of
+                              investigation?</h4>
+                            <ul>
+                              <li class="group group_1"><input type="radio" id="yes15" name="15st"><label for="yes15">yes</label>
+                              </li>
+                              <li class="group group_2">
+                                <input type="radio" id="no15" name="15st"><label for="no15">No</label>
+                              </li>
+                            </ul>
+                            <div class="inner"><label>if yes, please explain:</label><br>
+                              <div class="textarea-box">
+                                <textarea rows="5"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="desc-text">
+                            <p>I confirm that all information is accurate and complete to the best of my knowledge and ability. . I
+                              permit Amromed LLC to use this information and extrapolate into every form which they
+                              fill on my behalf.</p>
+                          </div>
+                
+                          <div class="signature-box flex-div">
+                            <div class="col-item signature-box">
+                              <div class="col-item">
+                                <span><input id="provider-sign" type="text" name="provider"></span>
+                                <span><label for="provider-sign">Provider Signature:</label></span>
+                              </div>
+                            </div>
+                            <div class="col-item">
+                              <span><input id="provider-date" type="date" name="provider date"></span>
+                              <span><label for="provider-date">Date:</label></span>
+                            </div>
+                          </div>
+                        </div>
+                
+                    </section>
+                    <section class="section_5">
+                        <table cellpadding="0" cellspacing="0">
+                          <thead>
+                            <th colspan="3">Please provide a copy of following documents</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Resume (with exp.) Please
+                                mention dates in mm/yyyy
+                                format.</td>
+                              <td>Copy of State License (If
+                                applicable)</td>
+                              <td>Board Certifications</td>
+                            </tr>
+                            <tr>
+                              <td>Copy of State License (If
+                                applicable)</td>
+                              <td><input type="text" name=""></td>
+                              <td><input type="text" name=""></td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name=""></td>
+                              <td><input type="text" name=""></td>
+                              <td><input type="text" name=""></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </section>
+                      <input type="button" name="next" class="next action-button" value="Submit" /> <input
+                                type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+                </fieldset>
+            </form>
+
+            <section class="footer-section">
+                <div class="flex-div">
+                  <div class="col-item">
+                    <p>123 Town Square Place Suite13, Jersey City, NJ 07310</p>
+                  </div>
+                  <div class="col-item">
+                    <p> <a href="tel:201-479-9876">Phone: 909-406-9004,</a> <a href="https://amromed.com/"> www.amromed.com</a>
+                      &nbsp Copy of State License (If applicable)
+                    </p>
+                  </div>
+                </div>
+              </section>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            var current_fs, next_fs, previous_fs; //fieldsets
+            var opacity;
+            var current = 1;
+            var steps = $("fieldset").length;
+
+            setProgressBar(current);
+
+            $(".next").click(function () {
+
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+
+                //Add Class Active
+                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                //show the next fieldset
+                next_fs.show();
+                //hide the current fieldset with style
+                current_fs.animate({
+                    opacity: 0
+                }, {
+                    step: function (now) {
+                        // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({
+                            'opacity': opacity
+                        });
+                    },
+                    duration: 500
+                });
+                setProgressBar(++current);
+            });
+
+            $(".previous").click(function () {
+
+                current_fs = $(this).parent();
+                previous_fs = $(this).parent().prev();
+
+                //Remove class active
+                $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+                //show the previous fieldset
+                previous_fs.show();
+
+                //hide the current fieldset with style
+                current_fs.animate({
+                    opacity: 0
+                }, {
+                    step: function (now) {
+                        // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        previous_fs.css({
+                            'opacity': opacity
+                        });
+                    },
+                    duration: 500
+                });
+                setProgressBar(--current);
+            });
+
+            function setProgressBar(curStep) {
+                var percent = parseFloat(100 / steps) * curStep;
+                percent = percent.toFixed();
+                $(".progress-bar")
+                    .css("width", percent + "%")
+            }
+
+            $(".submit").click(function () {
+                return false;
+            })
+
+        });
+    </script>
+</body>
+
+</html>

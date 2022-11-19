@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0px;
+padding:0px;
+font-family: 'Open Sans', sans-serif;
+}
+::placeholder {
+font-size: 16px !important;
+font-family:'Open Sans', sans-serif;
+}
+.card-body {
+    padding: 0;
+}
+
+.question-enrollment textarea {
+    resize: vertical;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px !important;
+}
+
+.mb_40{
+margin-bottom:40px;
+}
+.mb_30{
+margin-bottom:30px;
+}
+.mb_20{
+margin-bottom:20px;
+}
+.mtb_10{
+margin:10px auto;
+}
+.mb_0{
+margin-bottom:0px;
+}
+
+.question-enrollment ul {
+    padding: 0;
+    margin: 0;
+}
+.question-enrollment {
+    width: 100%;
+    max-width: 1240px;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: #207ac7;
+}
+.question-enrollment table tr td {
+    color: #000;
+}
+.question-enrollment header {
+    background: #fff;
+}
+.question-enrollment header .logo {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding: 20px 0px 0px;
+}
+.question-enrollment header .logo img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.question-enrollment header .flex-div {
+    align-items: center;
+}
+.question-enrollment header .col-item h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #207ac7;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.question-enrollment header .col-item:nth-child(2) {
+    width: 100% !important;
+}
+.question-enrollment header .col-item:nth-child(2) {
+    width: 50% !important;
+}
+.question-enrollment header .col-item .info-details p {
+    margin: 0;
+    font-size: 17px;
+    color: #000;
+    line-height: 24px;
+}
+.question-enrollment header .info-details p {
+    color: #d9534f !important;
+    font-size: 17px !important;
+}
+.question-enrollment header .flex-div {
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+}
+.question-enrollment header .flex-div  .info-details {
+    text-align: center;
+}
+.question-enrollment header .col-item .info-details ul {
+    margin: 20px auto 0px;
+    padding: 0;
+    display: block;
+}
+.question-enrollment header .col-item .info-details ul li {
+    list-style: none;
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 5px;
+}
+.question-enrollment header .col-item .info-details ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+}
+
+.question-enrollment header .col-item .info-details ul li span, .question-enrollment header .col-item .info-details ul li a span {
+    font-weight: 700;
+    color: #207ac7;
+    margin-right: 5px;
+}
+.question-enrollment header {
+    background: #fff;
+    border-bottom: 5px solid #207ac7;
+}
+
+.question-enrollment header .flex-div .col-item {
+    width: 50%;
+}
+.question-enrollment .bracket {
+    font-size: 13px !important;
+    color: #d9534f;
+    font-style: italic;
+}
+.question-enrollment .page-title h1 {
+    margin-top: 0px;
+    text-align: center;
+    color: #d9534f;
+    font-size: 30px;
+    text-transform: uppercase;
+    max-width: max-content;
+    margin: 0 auto;
+    position: relative;
+    padding: 0px 0px 15px;
+}
+.question-enrollment .page-title h1::after {
+    position: absolute;
+    bottom: 0px;
+    border-bottom: 5px solid #d9534f;
+    width: 20%;
+    height: 5px;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.question-enrollment .content {
+    border: 3px solid #fff;
+    padding: 20px;
+    background: #fff;
+    margin: 0px auto;
+}
+.question-enrollment .inner-main-title h2 {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #d9534f;
+    position: relative;
+    padding: 0px 0px 15px;
+    margin: 0 auto 29px;
+    font-weight: bold;
+}
+.question-enrollment  .inner-main-title h2::after {
+    position: absolute;
+    bottom: 0px;
+    border-bottom: 5px solid #d9534f;
+    width: 10%;
+    height: 5px;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.footer-section {
+    margin: 50px auto 0px;
+    box-shadow: 0px -8px 10px 0px #ccc;
+    padding: 20px 20px;
+}
+.footer-section  .flex-div {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+ .footer-section .flex-div .col-item {
+    flex: auto;
+    width: auto !important;
+}
+.footer-section .flex-div .col-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+}
+.footer-section .flex-div .col-item p a {
+    color: #207ac7;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer-section .flex-div .col-item:nth-child(2) p {
+    text-align: right;
+}
+
+/*================common css end=======================*/
+.question-enrollment  .col-title {
+    margin: 0px auto 15px;
+}
+.question-enrollment .col-title  h3 {
+    font-size: 17px;
+    margin: 0px;
+    font-weight: bold;
+    color: #207ac7;
+    text-transform: uppercase;
+}
+
+.question-enrollment  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ .question-enrollment  table tr th {
+    font-weight: bold;
+    color: #fff;
+    background: #207ac7;
+    border: 2px solid #4799e0;
+    font-size: 16px;
+}
+.question-enrollment table tr th, table tr td {
+    border: 2px solid #207ac7;
+    padding: 7px 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+.question-enrollment table tr th{
+text-transform: uppercase;
+}
+.question-enrollment table tr td input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.question-enrollment table tr td:nth-child(1) {
+    width: 40%;
+}
+.question-enrollment .input-area {
+    display: flex;
+}
+
+.question-enrollment .signature-box.flex-div {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+    max-width: 580px;
+}
+.question-enrollment .signature-box.flex-div .col-item:nth-child(2) input {
+    max-width: min-content;
+    padding: 0px 15px;
+}
+.author-signature .flex-div .col-item:nth-child(2) input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #207ac7;
+    margin-bottom: 10px;
+}
+.question-enrollment .signature-box.flex-div .col-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.question-enrollment .signature-box.flex-div  .col-item input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #207ac7;
+    margin-bottom: 0px;
+}
+.question-enrollment .signature-box.flex-div .col-item:nth-child(2) input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #207ac7;
+    margin-bottom: 0px;
+}
+.question-enrollment .desc-text p {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000;
+}
+.question-enrollment .signature-box.flex-div .col-item span label {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000;
+}
+
+.question-enrollment .select-area {
+    display: flex;
+    width: 100%;
+    max-width: 170px;
+    margin: 0 auto;
+}
+.question-enrollment .select-area span {
+    flex: auto;
+}
+.question-enrollment .select-area span input {
+    width: auto !important;
+}
+.question-enrollment .select-area span label {
+    font-weight: 600;
+    font-size: 16px;
+}
+.question-enrollment .section_3 table tr td:nth-child(1) {
+    width: 230px;
+}
+.question-enrollment .section_3 table tr td input[type="date"] {
+    text-align: center;
+}
+
+
+
+.question-enrollment .questions-answer-box h3{
+    color: #207ac7;
+    font-size: 17px;
+    margin: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.question-enrollment .questions-answer-box h4 {
+    color: #207ac7;
+    font-size: 17px;
+    margin: 10px auto -1px;
+    font-weight: normal;
+    font-weight: 600;
+}
+ .question-enrollment .questions-answer-box ul {
+    margin: 0;
+    padding: 0;
+}
+.question-enrollment .questions-answer-box ul li {
+    list-style: none;
+    margin: 10px 10px 0px 0px;
+    float: left;
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+.question-enrollment .questions-answer-box input, .question-enrollment .questions-answer-box textarea {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #333;
+}
+.question-enrollment .questions-answer-box ul li label {
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 5px;
+    text-transform: initial;
+}
+
+.question-enrollment .questions-answer-box .inner {
+    clear: both;
+    margin: 10px auto 0px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.question-enrollment .questions-answer-box .inner label {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+.question-enrollment .questions-answer-box{
+    display: inline-block;
+}
+
+.question-enrollment .questions-answer-box .textarea-box textarea {
+    width: 100%;
+    border: 2px solid #207ac7;
+    margin: 10px auto 0px;
+    padding: 10px;
+}
+
+.question-enrollment .questions-answer-box .question-box {
+    display: inline-block;
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+.question-enrollment .footer-section .flex-div {
+    flex-direction: column;
+    display: flex;
+
+}
+
+.question-enrollment .inner-main-title h2 {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #d9534f;
+    position: relative;
+    padding: 0px 0px 15px;
+    margin: 0 auto 29px;
+}
+
+.question-enrollment .footer-section .flex-div .col-item {
+    flex: auto;
+    width: 100% !important;
+    text-align: center;
+}
+.question-enrollment .footer-section .flex-div .col-item:nth-child(2) p {
+    text-align: center;
+}
+.question-enrollment .footer-section .flex-div {
+    flex-direction: column;
+    row-gap: 10px;
+}
+.question-enrollment .footer-section {
+    margin: 40px auto 0px;
+    box-shadow: 0px -8px 10px 0px #ccc;
+    padding: 20px 20px 0px;
+}
+section {
+    overflow: auto;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.question-enrollment header .flex-div {
+    flex-direction: column;
+}
+.question-enrollment header .flex-div .col-item {
+    width: 100%;
+}
+.question-enrollment header .logo img {
+    max-width: 250px;
+}
+.question-enrollment header .col-item:nth-child(2) {
+    width: 100% !important;
+}
+.question-enrollment header .info-details p {
+    font-size: 14px !important;
+}
+.question-enrollment header .col-item .info-details ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.question-enrollment .inner-main-title h2 {
+    font-size: 17px;
+    padding: 0px 0px 15px;
+    margin: 0 auto 15px;
+}
+.question-enrollment .col-title h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #207ac7;
+    text-transform: uppercase;
+    text-align: center;
+}
+.question-enrollment table tr th {
+    font-size: 14px !important;
+}
+.question-enrollment  header .col-item h1 {
+    font-size: 18px;
+}
+.question-enrollment .page-title h1 {
+    font-size: 17px;
+    padding: 0px 0px 10px;
+}
+.question-enrollment .page-title h1::after {
+    border-bottom: 4px solid #d9534f;
+    height: 4px;
+}
+.question-enrollment .section_2 p {
+    line-height: 25px;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}
+.question-enrollment .page-title {
+    margin: 0px auto 20px;
+}
+.question-enrollment th, .question-enrollment td {
+    padding: 3px !important;
+    font-size: 13px !important;
+}
+.question-enrollment .desc-text p {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+}
+.question-enrollment .box textarea {
+max-height: 70px;
+}
+.question-enrollment .content {
+    padding: 20px 10px;
+}
+.question-enrollment .footer-section .flex-div .col-item p {
+    text-align: center !important;
+}
+.question-enrollment .footer-section .flex-div {
+    row-gap: 10px;
+}
+.question-enrollment .questions-answer-box h4 {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.question-enrollment .questions-answer-box h3 {
+    font-size: 15px;
+    text-align: center;
+}
+.question-enrollment .questions-answer-box .inner label {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+.question-enrollment {
+    padding: 20px 10px;
+}
+.question-enrollment .col-item {
+    overflow: auto;
+}
+.question-enrollment .questions-answer-box ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.question-enrollment .questions-answer-box ul li label {
+    margin-bottom: 0px;
+}
+.question-enrollment .questions-answer-box .inner label {
+    text-align: center;
+    display: block;
+    margin-bottom: 0px;
+}
+.question-enrollment .questions-answer-box .inner label + br {
+    display: none;
+}
+.section_4.mb_30 {
+	margin-bottom: 0px;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+.question-enrollment .signature-box.flex-div {
+    flex-direction: column;
+    row-gap: 20px;
+}
+.question-enrollment .signature-box.flex-div .col-item span label {
+    font-weight: 700;
+    font-size: 14px;
+}
+.question-enrollment .content {
+    overflow: auto;
+}
+
+}
+
+
+
+
+/* progress-bar */
+
+.card {
+    z-index: 0;
+    position: relative;
+    border: none;
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+fieldset{
+    border: none !important;
+}
+
+#msform .action-button,
+#msform .action-button-previous {
+    width: 100px;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+    border-radius: 5px;
+}
+
+#msform .action-button{
+    background: #207ac7;
+}
+
+#msform .action-button-previous {
+    background: #616161;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+    text-align: center;
+}
+
+#progressbar .active {
+    color: #207ac7;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f007";
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007";
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f030";
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+.card{
+    z-index: 0;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #207ac7;
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover;
+}
