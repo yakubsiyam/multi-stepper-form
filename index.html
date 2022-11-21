@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <title>Multi Stepper Form</title>
@@ -40,7 +41,7 @@
           <li id="personal"><strong>Provider Information</strong></li>
           <li id="payment"><strong>Confidential Questionaire</strong></li>
           <li id="confirm"><strong>Authorization Signature</strong></li>
-          <!-- <li id="payment"><strong>Payment</strong></li> -->
+          <li id="payment"><strong>Payment</strong></li>
         </ul>
 
         <!-- PRACTICE INFORMATION -->
@@ -614,13 +615,15 @@
               <div class="page-title">
                 <h1>Authorization for use of signature</h1>
               </div>
-      
-      
+
+
               <section class="section_2">
                 <div class="col-item mb_40">
                   <p>I, <span><input type="text"></span>, authorize <strong> Amromed LLC</strong> to use my below signed
-                    “sample signatures” as a representative of <span><input type="text"></span> on the forms/applications of
-                    different insurance companies/Medical Groups used for the purpose of Enrollment/Contracting only.</p>
+                    “sample signatures” as a representative of <span><input type="text"></span> on the
+                    forms/applications of
+                    different insurance companies/Medical Groups used for the purpose of Enrollment/Contracting only.
+                  </p>
                 </div>
                 <div class="flex-div">
                   <div class="col-item signature-box">
@@ -632,7 +635,7 @@
                         </tr>
                         <tr>
                           <td colspan="2"><input type="text"></td>
-      
+
                         </tr>
                       </thead>
                     </table>
@@ -642,15 +645,145 @@
                     <span><label for="author-sign">Signature for Authorization</label></span>
                   </div>
                 </div>
-      
+
               </section>
-      
-      
-      
-      
+
+
+
+
             </div>
           </div>
           <input type="button" name="next" class="next action-button" value="Next" /> <input type="button"
+            name="previous" class="previous action-button-previous" value="Previous" />
+        </fieldset>
+
+        <!-- Authorization Table -->
+        <fieldset>
+          <div class="auto-payment-form">
+            <div class="content">
+              <div class="box-bg">
+                <section class="section_1 mb_30">
+                  <div class="col-item">
+                    <div class="inner-main-title">
+                      <h2>ACCOUNT INFORMATION:</h2>
+                    </div>
+                    <ul class="first flex-area">
+                      <li>
+                        <div class="input-area"> <span> <label for="company-name">Company Name:</label></span> <span>
+                            <input id="company-name" type="text" name="Company Name"></span> </div>
+                      </li>
+                      <li>
+                        <div class="input-area"> <span> <label for="contact-name">Contact Name:</label></span> <span>
+                            <input id="contact-name" type="text" name="Contact Name"></span> </div>
+                      </li>
+                    </ul>
+                    <br>
+                    <ul class="flex-area">
+                      <li>
+                        <div class="input-area"> <span> <label for="account">Account #:</label></span> <span> <input
+                              id="account" type="text" name="Account"></span> </div>
+                      </li>
+
+                      <li>
+                        <div class="input-area"> <span> <label for="phone">Phone:</label></span> <span> <input
+                              id="phone" type="text" name="Phone"></span> </div>
+                      </li>
+                      <li>
+                        <div class="input-area"> <span> <label for="date"> Date:</label></span> <span> <input id="date"
+                              type="date" name="date"> </span> </div>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="section_2">
+                  <div class="col-item">
+                    <div class="inner-main-title">
+                      <h2>PAYMENT OPTIONS:</h2>
+                    </div>
+                    <div class="payment-option"><img src="images/payment-option.png" alt=""></div>
+                    <ul>
+                      <li>
+                        <div class="input-area"> <span> <label for="card-holder">Name of Cardholder
+                              <span class="bracket">(*as it appears on card*) </span>: <br></label></span> <br><span>
+                            <input id="card-holder" type="text" name="Name of Cardholder"></span> </div>
+                      </li>
+                      <li>
+                        <div class="input-area"> <span> <label for="billing-address">Credit Card Billing Address:
+                              <br></label></span> <span> <input id="billing-address" type="text"
+                              name="billing address"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="input-area"><span> <label for="credit-card">Credit Card #:<br></label></span> <span>
+                            <input id="credit-card" type="text" name="credit-card"></span> </div>
+                      </li>
+                    </ul>
+                    <ul class="flex-div">
+                      <li>
+                        <div class="input-area"><span> <label for="city">City: <br></label></span> <span> <input
+                              id="city" type="text" name="city"></span> </div>
+                      </li>
+                      <li>
+                        <div class="input-area"><span> <label for="state">State: <br></label></span> <span> <input
+                              id="state" type="text" name="state"></span> </div>
+                      </li>
+                      <li>
+                        <div class="input-area"><span> <label for="zip">Zip: <br></label></span> <span> <input id="zip"
+                              type="text" name="zip"></span> </div>
+                      </li>
+                    </ul>
+
+                    <ul class="flex-div">
+                      <li>
+                        <div class="input-area"><span> <label for="car-type">Credit Card Type: <br></label></span>
+                          <span> <input id="card-type" type="text" name="card type"></span> </div>
+                      </li>
+                      <li>
+                        <div class="input-area"><span> <label for="expire-date">Expiration (MM/YY):<br></label></span>
+                          <span>
+                            <input id="expire-date" type="date" name="expire date"></span> </div>
+                      </li>
+                    </ul>
+
+                  </div>
+                </section>
+              </div>
+
+              <section class="section_3">
+                <div class="col-item">
+                  <p><span> <strong>IMPORTANT NOTICE:</strong> </span><i> You are responsible to keep your auto payment
+                      information on file current. Please submit a new authorization form for any credit/electronic
+                      check
+                      account changes, especially expiration dates. If your payment is not processed, it is your
+                      responsibility
+                      to contact Amromed LLC for information or submit a revised form with current information. Amromed
+                      LLC
+                      accounts with outstanding balances are subject to being disabled until payment is received. Please
+                      monitor
+                      your credit card/bank charges. You will continue to receive invoices and statements. Please
+                      reconcile your
+                      account each month. </i> </p>
+                </div>
+              </section>
+
+              <section class="section_bottom">
+                <div class="button-row flex-div">
+                  <div class="mark-sign"><a href="#"><span class="mark-icon"><i class="fas fa-check"></i></span>
+                      Completed and
+                      Sign</a></div>
+                  <div class="save-prog"><a href="#"><span class="cloud-icon"><i class="fas fa-envelope"></i></span>
+                      Email
+                      (encrypt) </a></div>
+                  <div class="print"><a href="#"><span class="print-icon"><i class="fas fa-print"></i></span>Print</a>
+                  </div>
+                  <div class="cancel"><a href="#"><span class="cross-icon"><i class="fas fa-times"></i></span>Cancel</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button"
             name="previous" class="previous action-button-previous" value="Previous" />
         </fieldset>
       </form>
