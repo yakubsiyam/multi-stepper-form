@@ -53,6 +53,7 @@ margin-bottom:0px;
 .question-enrollment table tr td {
     color: #000;
 }
+
 .question-enrollment header {
     background: #fff;
 }
@@ -128,7 +129,7 @@ margin-bottom:0px;
 }
 .question-enrollment header {
     background: #fff;
-    border-bottom: 5px solid #207ac7;
+    border-bottom: 0px solid #207ac7;
 }
 
 .question-enrollment header .flex-div .col-item {
@@ -136,8 +137,11 @@ margin-bottom:0px;
 }
 .question-enrollment .bracket {
     font-size: 13px !important;
-    color: #d9534f;
+    color: #000;
     font-style: italic;
+    margin: 0px auto 0px;
+    display: block;
+    text-transform: initial;
 }
 .question-enrollment .page-title h1 {
     margin-top: 0px;
@@ -241,11 +245,25 @@ margin-bottom:0px;
 }
 .question-enrollment table tr th, table tr td {
     border: 2px solid #207ac7;
-    padding: 7px 10px;
+    padding: 10px 10px;
     text-align: center;
     font-weight: 700;
     font-size: 17px;
 }
+.question-enrollment table tr td .flex-div {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    text-align: left;
+    flex-direction: column-reverse;
+    row-gap: 5px;
+}
+
+.question-enrollment table tr td .flex-div {
+    text-align: center;
+}
+
 .question-enrollment table tr th{
 text-transform: uppercase;
 }
@@ -332,8 +350,8 @@ text-transform: uppercase;
 
 
 
-.question-enrollment .questions-answer-box h3{
-    color: #207ac7;
+.question-enrollment .questions-answer-box h3 {
+    color: #d9534f;
     font-size: 17px;
     margin: 0px;
     font-weight: bold;
@@ -343,7 +361,6 @@ text-transform: uppercase;
     color: #207ac7;
     font-size: 17px;
     margin: 10px auto -1px;
-    font-weight: normal;
     font-weight: 600;
 }
  .question-enrollment .questions-answer-box ul {
@@ -365,11 +382,12 @@ text-transform: uppercase;
     color: #333;
 }
 .question-enrollment .questions-answer-box ul li label {
-    color: #000;
+    color: #d9534f;
     font-weight: 600;
     font-size: 15px;
     padding-left: 5px;
     text-transform: initial;
+    font-style: italic;
 }
 
 .question-enrollment .questions-answer-box .inner {
@@ -380,9 +398,10 @@ text-transform: uppercase;
     width: 100%;
 }
 .question-enrollment .questions-answer-box .inner label {
-    color: #000;
+    color: #d9534f;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
+    font-style: italic;
 }
 .question-enrollment .questions-answer-box{
     display: inline-block;
@@ -398,6 +417,56 @@ text-transform: uppercase;
 .question-enrollment .questions-answer-box .question-box {
     display: inline-block;
     width: 100%;
+}
+
+.file {
+    position: relative;
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    max-width: 100px;
+}
+
+.file > input[type="file"] {
+  position: absoulte;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+cursor: pointer;
+}
+
+
+.file > label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #24d8b7;
+    color: #fff;
+    border-radius: 7px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 3px 9px;
+    border-radius: 7px;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+    min-width: 90px;
+    cursor: pointer;
+}
+.file > label:hover {
+    color: #050404 !important;
+}
+
+.section_5 table tr td {
+    width: 25%;
+}
+.section_5 table tr td:nth-child(1){
+    width: 25%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -437,11 +506,26 @@ text-transform: uppercase;
 section {
     overflow: auto;
 }
+
 }
 
 @media only screen and (max-width: 768px) {
+.file > label {
+    cursor: pointer; padding: 3px 9px;
+    border-radius: 7px;
+    margin-right: 3px;
+    text-decoration: none;
+    min-width: auto;
+    line-height: 22px;
+}
 .question-enrollment header .flex-div {
     flex-direction: column;
+}
+.question-enrollment table tr td .flex-div {
+    row-gap: 10px;
+}
+.section_2 tr td, .section_5 tr td {
+    padding: 15px 10px !important;
 }
 .question-enrollment header .flex-div .col-item {
     width: 100%;
@@ -553,7 +637,7 @@ max-height: 70px;
     display: none;
 }
 .section_4.mb_30 {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 }
@@ -574,7 +658,271 @@ max-height: 70px;
 }
 
 
-
+/* AUTHORIZATION FOR USE OF SIGNATURE */
+.author-signature {
+    width: 100%;
+    max-width: 1240px;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 20px;
+    /* background: #207ac7; */
+  }
+  .author-signature input {
+    outline: none;
+    font-size: 16px;
+  }
+  .author-signature .content .inner-content {
+    width: 100%;
+    max-width: 870px;
+    margin: 0 auto;
+  }
+  .author-signature header {
+    background: #fff;
+    border-bottom: 0px solid #207ac7;
+    padding: 20px;
+  }
+  .author-signature header .logo {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding: 20px 0px 0px;
+  }
+  .author-signature header .logo img {
+    width: 100%;
+    max-width: 230px;
+  }
+  
+  .author-signature table input {
+    border: none;
+    min-height: 130px;
+  }
+  .author-signature table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .author-signature .bracket {
+    font-size: 14px;
+    color: #d9534f;
+  }
+  .author-signature table tr th,
+  .author-signature table tr td {
+    border: 2px solid #207ac7;
+    padding: 7px 10px;
+  }
+  .author-signature table tr th input,
+  .author-signature table tr td input {
+    width: 100%;
+  }
+  
+  .author-signature table tr th {
+    font-weight: bold;
+    color: #fff;
+    background: #207ac7;
+    border: 2px solid #4799e0;
+    font-size: 16px;
+  }
+  .author-signature .page-title h1 {
+    margin-top: 0px;
+    text-align: center;
+    color: #d9534f;
+    font-size: 30px;
+    text-transform: uppercase;
+    max-width: max-content;
+    margin: 0 auto 30px;
+    position: relative;
+    padding: 0px 0px 15px;
+    font-weight: bold;
+  }
+  .author-signature .page-title h1::after {
+    position: absolute;
+    bottom: 0px;
+    border-bottom: 5px solid #d9534f;
+    width: 20%;
+    height: 5px;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .author-signature .content {
+    border: 3px solid #fff;
+    padding: 20px !important;
+    background: #fff;
+    margin: 0 !important;
+  }
+  
+  .author-signature .section_2 p {
+    line-height: 40px;
+    font-size: 21px;
+    color: #000;
+  }
+  .author-signature .section_2 p span {
+    width: 40%;
+    display: inline-block;
+  }
+  .author-signature .section_2 p span input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #207ac7;
+  }
+  .author-signature .col-item.signature-box {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  .author-signature .flex-div {
+    display: flex;
+  }
+  
+  .author-signature .footer-section .flex-div .col-item {
+    flex: auto;
+    width: auto;
+  }
+  
+  .author-signature .footer-section .flex-div .col-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .author-signature .footer-section .flex-div .col-item p a {
+    color: #207ac7;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .author-signature .footer-section {
+    margin: 50px auto 0px;
+    box-shadow: 0px -8px 10px 0px #ccc;
+    padding: 20px 20px;
+  }
+  .author-signature .footer-section .flex-div .col-item {
+    flex: auto;
+    width: auto !important;
+  }
+  .author-signature .footer-section .flex-div .col-item:nth-child(2) p {
+    text-align: right;
+  }
+  
+  .author-signature .flex-div {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+  }
+  .author-signature .flex-div .col-item {
+    width: 50%;
+  }
+  
+  .author-signature .flex-div .col-item:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .author-signature .section_2 .flex-div {
+    align-items: center;
+  }
+  .author-signature .flex-div .col-item:nth-child(2) input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #207ac7;
+    margin-bottom: 10px;
+  }
+  .author-signature .flex-div .col-item:nth-child(2) label {
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .author-signature .footer-section .flex-div {
+      flex-direction: column;
+    }
+    .author-signature .footer-section .flex-div .col-item {
+      flex: auto;
+      width: 100% !important;
+      text-align: center;
+    }
+    .author-signature .footer-section .flex-div .col-item:nth-child(2) p {
+      text-align: center;
+    }
+    .author-signature .footer-section .flex-div {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    .author-signature .footer-section {
+      margin: 40px auto 0px;
+      box-shadow: 0px -8px 10px 0px #ccc;
+      padding: 20px 20px 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .author-signature .mb_40 {
+      margin-bottom: 30px;
+    }
+    .author-signature .page-title h1 {
+      font-size: 17px;
+      padding: 0px 0px 10px;
+    }
+    .author-signature .page-title h1::after {
+      border-bottom: 4px solid #d9534f;
+      height: 4px;
+    }
+    .author-signature .section_2 p {
+      line-height: 25px;
+      font-size: 14px;
+      color: #000;
+      text-align: center;
+    }
+    .author-signature .section_2 .flex-div {
+      align-items: center;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+    .author-signature .section_2 .flex-div .col-item {
+      width: 100%;
+      max-width: 500px;
+    }
+  
+    .author-signature .page-title {
+      margin: 0px auto 20px;
+    }
+    .author-signature th,
+    .author-signature td {
+      padding: 3px !important;
+      font-size: 14px !important;
+    }
+  
+    .author-signature section .input-area label {
+      font-size: 14px;
+    }
+  
+    .author-signature .box textarea {
+      max-height: 70px;
+    }
+    .author-signature .content {
+      padding: 20px 10px;
+    }
+  
+    .author-signature .footer-section .flex-div .col-item p {
+      text-align: center !important;
+    }
+    .author-signature .footer-section .flex-div {
+      row-gap: 10px;
+    }
+    .author-signature .section_3 table tr th:nth-last-child(1) {
+      width: auto;
+    }
+    .author-signature {
+      padding: 5px 5px;
+      background: #207ac7;
+    }
+    .author-signature .content {
+      padding: 20px 5px;
+    }
+    .author-signature .flex-div table td span input {
+      max-width: 45px;
+      padding: 1px 0px;
+    }
+  }
 
 /* progress-bar */
 
@@ -632,7 +980,7 @@ fieldset{
 #progressbar li {
     list-style-type: none;
     font-size: 15px;
-    width: 33.33%;
+    width: 20%;
     float: left;
     position: relative;
     font-weight: 400;
@@ -654,6 +1002,11 @@ fieldset{
 }
 
 #progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar #payment:before {
     font-family: FontAwesome;
     content: "\f00c"
 }
