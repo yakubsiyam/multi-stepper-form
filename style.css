@@ -171,6 +171,8 @@ body {
   padding: 20px;
   background: #fff;
   margin: 0px auto;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .question-enrollment .inner-main-title h2 {
   text-align: center;
@@ -1546,8 +1548,8 @@ table tr td {
 /* progress-bar */
 
 .card {
-  z-index: 0;
-  position: relative;
+  /* z-index: 0; */
+  /* position: relative; */
   border: none;
 }
 
@@ -1603,6 +1605,7 @@ fieldset {
   float: left;
   position: relative;
   font-weight: 400;
+  z-index: 0;
 }
 
 #progressbar #account:before {
@@ -1652,10 +1655,6 @@ fieldset {
   left: 0;
   top: 25px;
   z-index: -1;
-}
-
-.card {
-  z-index: 0;
 }
 
 #progressbar li.active:before,

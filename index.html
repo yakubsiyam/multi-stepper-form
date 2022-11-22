@@ -5,9 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+
+  
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
   <title>Multi Stepper Form</title>
 </head>
@@ -593,7 +599,8 @@
               <div class="signature-box flex-div">
                 <div class="col-item signature-box">
                   <div class="col-item">
-                    <span><input id="provider-sign" type="text" name="provider"></span>
+                    <span><input id="provider-sign" type="text"
+                        data-bs-target="#providersignature"></span>
                     <span><label for="provider-sign">Provider Signature:</label></span>
                   </div>
                 </div>
@@ -802,6 +809,8 @@
       </section>
     </div>
   </div>
+
+  
 
   <script>
     $(document).ready(function () {
